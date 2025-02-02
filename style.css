@@ -102,4 +102,14 @@ main {
 #donate-button:focus {
     outline: none;  /* Remove default outline on focus */
 }
+#instagram-icon {
+    font-size: 40px;
+    color: #E1306C; /* Instagram's pink color */
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+#instagram-icon:hover {
+    color: #C13584; /* Darker pink on hover */
+}
 
