@@ -1,0 +1,105 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: purple;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: pink;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: pink;
+    text-decoration: none;
+}
+
+footer {
+    background-color: purple;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+#logo {
+    font-family: 'Bungee', cursive;  /* Use the Bungee font */
+    font-size: 5rem;  /* Increase the font size */
+    color: #ff4da6;  /* Use pink for the text */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 0 0 25px #ff4da6;  /* More intense shadow and glowing effect */
+    letter-spacing: 6px;  /* Add more space between letters */
+    text-transform: uppercase;  /* Keep letters in uppercase */
+    font-weight: bold;  /* Make the font bold */
+    animation: logoAnimation 2s ease-out forwards;  /* Keep the animation */
+    display: inline-block;  /* Prevent it from stacking */
+    margin: 20px 0;  /* Add some space around it */
+}
+
+@keyframes logoAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#telegram-icon {
+    font-size: 40px;  /* Size of the icon */
+    color: #0088cc;   /* Telegram blue color */
+    margin-right: 20px;  /* Space between icons if you add more */
+}
+#youtube-icon {
+    font-size: 40px;  /* Set the size of the icon */
+    color: red;  /* YouTube's signature red color */
+    margin-right: 20px;  /* Space between other icons if needed */
+}
+#donate-button {
+    background-color: #ff4da6;  /* Bright pink to match your theme */
+    color: white;
+    padding: 15px 30px;  /* Larger button for prominence */
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;  /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    margin-top: 20px;  /* Add space above it */
+}
+
+#donate-button:hover {
+    background-color: #ff1a6b;  /* Darker pink on hover */
+    transform: scale(1.05);  /* Slightly enlarge the button on hover */
+}
+
+#donate-button:focus {
+    outline: none;  /* Remove default outline on focus */
+}
+
